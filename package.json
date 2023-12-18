@@ -28,7 +28,7 @@
         "trim-newlines": "^4.0.2"
     },
     "devDependencies": {
-        "electron": "^20.1.1",
+        "electron": "^28.0.0",
         "electron-builder": "^23.0.2",
         "typescript": "^4.7.3"
     },
@@ -36,7 +36,9 @@
         "productName": "YouTube TV",
         "appId": "com.youtube.tv",
         "asar": true,
-        "directories": { "output": "./YTV_Builds" },
+        "directories": {
+            "output": "./YTV_Builds"
+        },
         "mac": {
             "category": "public.app-category.entertainment",
             "target": "dmg",
@@ -58,7 +60,10 @@
             "background": "build/background.tiff"
         },
         "linux": {
-            "target": [ "deb", "rpm" ],
+            "target": [
+                "deb",
+                "rpm"
+            ],
             "icon": "build/icon.icns",
             "packageCategory": "Video"
         },
