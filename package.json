@@ -36,7 +36,7 @@
         "productName": "YouTube TV",
         "appId": "com.youtube.tv",
         "asar": true,
-        "directories": { "output": "../YTV_Builds" },
+        "directories": { "output": "./YTV_Builds" },
         "mac": {
             "category": "public.app-category.entertainment",
             "target": "dmg",
