@@ -93,7 +93,7 @@ export class Renderer {
             fullscreen: false,
             fullscreenable: true,
             title: 'YouTube TV',
-            backgroundColor: '#282828',
+            backgroundColor: '#171616',
             icon: nativeImage.createFromPath(join(cwd(), 'build', 'icon.png')),
             webPreferences: {
                 nodeIntegration: true,
@@ -204,7 +204,9 @@ export class Renderer {
 
         globalShortcut.register('ctrl+f', () => { this.fullScreen = !this.window.isFullScreen(); })
 
-        globalShortcut.register('ctrl+d', () => { this.window.webContents.toggleDevTools(); })
+        globalShortcut.register('ctrl+shift+f12', () => { this.window.webContents.toggleDevTools(); }) 
+
+        globalShortcut.register('ztrl+f5', () => { this.window.webContents.reload(); })
 
         globalShortcut.register('ctrl+a', () => this.cursor = null);
         
