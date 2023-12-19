@@ -185,4 +185,4 @@ loadConnectionEvents();
 // Escucha las peticiones de consultas al localStorage.
 listenLocalStorageQueries();
 
-console.log('JavaScript enhancements loaded at', new Date(Date.now()).toISOString());
+console.log('JavaScript enhancements loaded at', new Date(Date.now()).toLocaleTimeString());
