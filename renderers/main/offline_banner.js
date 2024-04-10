@@ -5,7 +5,7 @@
  * no está disponible, este script mostrará un mensaje de estado.
  */
 
-const ipc = window.require('electron').ipcRenderer;
+const ipc = window.ipc;
 const styles = document.createElement('style');
 const banner_cont = document.createElement('div');
 const offline_picture = document.createElement('div');

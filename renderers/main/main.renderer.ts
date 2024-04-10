@@ -101,10 +101,11 @@ export class Renderer {
       backgroundColor: "#282828",
       icon: nativeImage.createFromPath(join(cwd(), "build", "icon.png")),
       webPreferences: {
-        nodeIntegration: true,
+        nodeIntegration: false,
         webSecurity: true,
         contextIsolation: false,
         backgroundThrottling: false,
+        preload: join(__dirname, "preload.js"),
       },
     });
 
