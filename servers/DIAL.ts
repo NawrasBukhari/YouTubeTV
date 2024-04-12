@@ -13,6 +13,11 @@ import process from '../main';
 import { Apps } from '../models/dial.interface';
 import { randomInt } from 'crypto';
 
+const LAN_SUFFIX = [
+    '.local',
+    '.lan',
+]
+
 export class Dial {
 
     /** Stores allowed apps */
@@ -146,8 +151,14 @@ export class Dial {
     private getFriendlyName() {
         let hname = hostname();
 
-        if (hname.includes('.local')) {
-            hname = hname.replace('.local', '');
+        // Strip '.local' and '.lan' hostname suffix given by the router.
+        // In case the router is weird about it, keep stripping them until there aren't any left.
+        for (let lastHname = ""; hname != lastHname; lastHname = hname) {
+            for (const suffix of LAN_SUFFIX) {
+                if (hname.toLowerCase().endsWith(suffix)) {
+                    hname = hname.substring(0, hname.length - suffix.length);
+                }
+            }
         }
 
         // e.g. "Marco's-MacBook-Pro" converted to "Marco's MacBook Pro (
