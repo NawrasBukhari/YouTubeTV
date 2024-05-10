@@ -136,15 +136,15 @@ export class Renderer {
             }
 
             if (script === "all") {
-                this.window.webContents.executeJavaScript(this.jsic);
+                await this.window.webContents.executeJavaScript(this.jsic);
                 platform() === "darwin"
-                    ? this.window.webContents.executeJavaScript(this.titleBar)
+                    ? await this.window.webContents.executeJavaScript(this.titleBar)
                     : false;
             } else if (script === "patchs") {
-                this.window.webContents.executeJavaScript(this.jsic);
+                await this.window.webContents.executeJavaScript(this.jsic);
             } else if (script === "titlebar") {
                 platform() === "darwin"
-                    ? this.window.webContents.executeJavaScript(this.titleBar)
+                    ? await this.window.webContents.executeJavaScript(this.titleBar)
                     : false;
             }
         } catch (error) {

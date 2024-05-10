@@ -2,8 +2,8 @@
 <img src="./build/icon.png" width=120px>
 
 # **YouTube TV**
-[![Downloads](https://img.shields.io/github/downloads/marcosrg9/YouTubeTV/total.svg?color=FF0000&label=Total%20downloads)](https://github.com/marcosrg9/YouTubeTV/releases/)
-[![Downloads](https://img.shields.io/github/downloads/marcosrg9/YouTubeTV/v2.4.1/total.svg?color=blue&label=2.4.1%20Downloads)](https://github.com/marcosrg9/YouTubeTV/releases/tag/v2.4.1)
+[![Downloads](https://img.shields.io/github/downloads/NawrasBukhari/YouTubeTV/total.svg?color=FF0000&label=Total%20downloads)](https://github.com/NawrasBukhari/YouTubeTV/releases/)
+[![Downloads](https://img.shields.io/github/downloads/NawrasBukhari/YouTubeTV/2.4.4/total.svg?color=blue&label=2.4.4%20Downloads)](https://github.com/NawrasBukhari/YouTubeTV/releases/tag/v2.4.4)
 
 Simple YouTube TV Client for desktop based on [electron](https://www.electronjs.org/). You can connect a compatible device such as a phone or computer with Google Chrome and send videos to the app for viewing, just like on ChromeCast or smart TVs with YouTube.
 
@@ -29,9 +29,9 @@ If you already have electron installed globally, you can start the app with ```e
 ## 📦 Builds
 The project can be downloaded already built and ready to use. Available for Linux, macOS and Windows. On x86, x84 and ARM architectures.
 
-| Platform      |   Architecture   |  Link  |
-|---------------|:----------------:|:------:|
-| Windows       | x32/x64          | [Download](https://github.com/NawrasBukhari/YouTubeTV/releases/download/2.4.3/YouTube.TV.Setup.2.4.3.exe) |
+| Platform      |   Architecture   |     Link     |
+|---------------|:----------------:|:------------:|
+| Windows       | x32/x64          | [Download](https://github.com/NawrasBukhari/YouTubeTV/releases/download/2.4.4/YouTube.TV.Setup.2.4.4.exe) |
 
 
 [Last Build](https://github.com/NawrasBukhari/YouTubeTV/releases/latest)
@@ -43,6 +43,12 @@ The project can be downloaded already built and ready to use. Available for Linu
 - Change cursor visibility: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>.
 
 ## ⚡️ Last changes [2.4.3]
+### **2.4.4**
+- Strip '.lan' from friendly name
+- Fix visibilitychange event overriding
+- Disable nodeIntegration for YouTube renderer
+
+
 ### **2.4.3**
 - Added ads-blocker.
 - Changed hotkeys
