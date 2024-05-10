@@ -3,6 +3,7 @@ node_modules/
 windows_installer/
 dist/
 msi/
+.idea/*
 msi-packager.js
 .DS_Store
 package-lock.json

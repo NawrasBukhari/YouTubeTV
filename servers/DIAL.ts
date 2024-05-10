@@ -21,7 +21,7 @@ const LAN_SUFFIX = [
 export class Dial {
 
     /** Stores allowed apps */
-    private apps: Apps;
+    private readonly apps: Apps;
     /** Stores the DIAL server */
     private server: Server;
     /** Stores the express application server. */
@@ -70,6 +70,7 @@ export class Dial {
      * Fires when device connects to the DIAL server.
      * @param appName application name (YouTube TV, obviously)
      * @param launchData url for synchronization with the device.
+     * @param callback Executes connection.
      */
     private onLaunch(appName: string, launchData: string, callback: (data: string) => void) {
 
