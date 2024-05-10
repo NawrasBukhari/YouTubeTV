@@ -22,11 +22,11 @@ Object.keys(msgDB).forEach(lang => {
  */
 const visibilityChangeOverriding = () => {
 
-    document.addEventListener('webkitvisibilitychange', event => {
+    window.addEventListener('webkitvisibilitychange', event => {
         event.stopImmediatePropagation();
     }, true);
 
-    document.addEventListener('visibilitychange', event => {
+    window.addEventListener('visibilitychange', event => {
         event.stopImmediatePropagation();
     }, true);
 
