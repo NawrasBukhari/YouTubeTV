@@ -115,9 +115,6 @@ const loadConnectionWarnings = () => {
  */
 const loadConnectionEvents = () => {
 
-    // Carga el IPC de electron.
-    window.ipc = window.require('electron').ipcRenderer;
-
     // Declara el aviso de restauración de conexión.
     const rest = document.getElementById('rest');
 
