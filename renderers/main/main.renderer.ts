@@ -113,6 +113,8 @@ export class Renderer {
             },
         });
 
+        // @feature: https://github.com/NawrasBukhari/YouTubeTV/issues/4
+        this.window.maximize();
 
         process.nextTick(() => this.loadSettings());
     }

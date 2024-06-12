@@ -1,7 +1,7 @@
 {
     "name": "youtube-tv",
     "productName": "YouTube TV",
-    "version": "2.4.4",
+    "version": "2.4.5",
     "description": "Simple YouTube TV client for desktop based on electron.",
     "main": "main.js",
     "scripts": {
